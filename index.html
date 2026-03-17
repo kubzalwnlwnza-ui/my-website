@@ -108,6 +108,23 @@
                     </div>
                     <div class="flex-1 text-left text-sm font-semibold dark:text-white">Facebook</div>
                 </a>
+
+                <a id="link-instagram" href="#" target="_blank" class="glass-btn flex items-center p-4 rounded-2xl fade-in" style="animation-delay: 0.5s;">
+                    <div class="icon-box w-10 h-10 rounded-xl bg-pink-500/10 flex items-center justify-center text-pink-500 mr-4 shadow-inner">
+                        <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/></svg>
+                    </div>
+                    <div class="flex-1 text-left text-sm font-semibold dark:text-white">Instagram</div>
+                </a>
+
+                <a id="link-shop" href="shop.html" class="glass-btn flex items-center p-4 rounded-2xl fade-in" style="animation-delay: 0.6s;">
+                    <div class="icon-box w-10 h-10 rounded-xl bg-orange-500/10 flex items-center justify-center text-orange-500 mr-4 shadow-inner">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 11V7a4 4 0 11-8 0v4M5 9h14l1 12H4L5 9z"></path>
+                        </svg>
+                    </div>
+                    <div class="flex-1 text-left text-sm font-bold dark:text-white">ร้านขายของ NiceShop</div>
+                    <div class="text-[10px] bg-orange-500 text-white px-2 py-0.5 rounded-full animate-pulse">NEW</div>
+                </a>
             </div>
 
             <p id="ui-footer" class="mt-12 text-[10px] tracking-[0.2em] uppercase text-slate-400 fade-in" style="animation-delay: 0.7s;">
@@ -118,12 +135,13 @@
 
     <script>
         const SITE_DATA = {
-            profileImg: "profile.jpg", // ใช้ชื่อไฟล์ตาม GitHub ของคุณ
+            profileImg: "profile.jpg",
             links: {
                 youtube: "https://www.youtube.com/watch?v=PeuK3febyAY",
                 line: "https://line.me/ti/p/hIPTz_WZja", 
                 facebook: "https://www.facebook.com/share/17Ko9R6yy2/",
-                instagram: "https://www.instagram.com/kkiir_rl"
+                instagram: "https://www.instagram.com/kkiir_rl",
+                shop: "shop.html"
             },
             lang: {
                 en: {
@@ -155,6 +173,8 @@
             document.getElementById('link-youtube').href = SITE_DATA.links.youtube;
             document.getElementById('link-line').href = SITE_DATA.links.line;
             document.getElementById('link-facebook').href = SITE_DATA.links.facebook;
+            document.getElementById('link-instagram').href = SITE_DATA.links.instagram;
+            document.getElementById('link-shop').href = SITE_DATA.links.shop;
 
             localStorage.setItem('lang', currentLang);
             localStorage.setItem('theme', isDark ? 'dark' : 'light');
