@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="th" class="h-full">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NiceShop | Coming Soon</title>
+    <script src="https://cdn.tailwindcss.com/3.4.17"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Prompt:wght@300;400;600&display=swap" rel="stylesheet">
+    <style>
+        * { font-family: 'Prompt', sans-serif; }
+        
+        body { 
+            background: #0f172a; 
+            overflow: hidden;
+        }
+
+        /* เอฟเฟกต์วงกลมเรืองแสงเบื้องหลัง */
+        .glow {
+            position: absolute;
+            width: 300px;
+            height: 300px;
+            background: radial-gradient(circle, rgba(249, 115, 22, 0.15) 0%, rgba(15, 23, 42, 0) 70%);
+            border-radius: 50%;
+            filter: blur(40px);
+            z-index: -1;
+            animation: move 10s infinite alternate;
+        }
+
+        @keyframes move {
+            from { transform: translate(-10%, -10%); }
+            to { transform: translate(20%, 20%); }
+        }
+
+        .glass-card {
+            background: rgba(255, 255, 255, 0.03);
+            backdrop-filter: blur(15px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+    </style>
+</head>
+<body class="h-full flex items-center justify-center p-6 text-white">
+
+    <div class="glow top-10 left-10"></div>
+    <div class="glow bottom-10 right-10" style="animation-delay: -5s; background: radial-gradient(circle, rgba(56, 189, 248, 0.1) 0%, rgba(15, 23, 42, 0) 70%);"></div>
+
+    <div class="max-w-md w-full glass-card rounded-[2.5rem] p-10 text-center shadow-2xl relative overflow-hidden">
+        
+        <div class="mb-8 relative inline-block">
+            <div class="w-20 h-20 border-4 border-orange-500/20 rounded-full flex items-center justify-center">
+                <svg class="w-10 h-10 text-orange-500 animate-bounce" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 11V7a4 4 0 11-8 0v4M5 9h14l1 12H4L5 9z"></path>
+                </svg>
+            </div>
+            <div class="absolute inset-0 border-t-4 border-orange-500 rounded-full animate-spin"></div>
+        </div>
+
+        <h1 class="text-3xl font-bold mb-4 tracking-tight">NiceShop</h1>
+        <div class="h-1 w-20 bg-orange-500 mx-auto mb-6 rounded-full"></div>
+        
+        <p class="text-slate-400 text-lg mb-2 font-light">กำลังเตรียมความพร้อม</p>
+        <p class="text-slate-500 text-sm mb-10 leading-relaxed">
+            อดใจรออีกไม่นาน... <br>
+            เรากำลังคัดสรรสินค้าที่ดีที่สุดมาเพื่อคุณ
+        </p>
+
+        <a href="index.html" class="inline-flex items-center justify-center px-8 py-3 bg-white text-slate-900 rounded-2xl font-semibold transition-all hover:bg-orange-500 hover:text-white group">
+            <svg class="w-5 h-5 mr-2 transform group-hover:-translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 19l-7-7m0 0l7-7m-7 7h18"></path>
+            </svg>
+            กลับหน้าหลัก
+        </a>
+
+        <div class="mt-12 w-full bg-slate-800 h-1 rounded-full overflow-hidden">
+            <div class="bg-orange-500 h-full w-[65%] animate-[pulse_2s_infinite]"></div>
+        </div>
+        <p class="mt-2 text-[10px] text-slate-600 uppercase tracking-widest">Update Progress: 65%</p>
+
+    </div>
+
+</body>
+</html>
